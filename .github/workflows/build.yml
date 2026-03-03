@@ -1,6 +1,6 @@
 name: Build Expo APK
 on:
-  workflow_dispatch:  # 允许手动触发
+  workflow_dispatch:
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -43,3 +43,4 @@ jobs:
           path: client/android/app/build/outputs/apk/release/*.apk
           if-no-files-found: error
           retention-days: 30
+
